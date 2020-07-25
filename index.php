@@ -14,6 +14,7 @@
             require_once "class/Aluno.php";
             //require_once "class/Professor.php";
             require_once "class/Bolsista.php";
+            require_once "class/Tecnico.php";
 
            $v1 = new Visitante();
            $v1->setNome("Juvenal");
@@ -21,7 +22,7 @@
            $v1->setSexo("M");
 
            print_r($v1);
-           echo "<br>";
+           echo "<hr>";
 
            $a1 = new Aluno();
            $a1->setNome("Bruno");
@@ -32,7 +33,7 @@
            $a1->pagarMensalidade();
        
            print_r($a1);
-
+           echo "<hr>";
            $b1 = new Bolsista();
            $b1->setNome("Amanda");
            $b1->setIdade(20);
@@ -44,6 +45,19 @@
            $b1->pagarMensalidade();
 
            print_r ($b1);
+           echo "<hr>";
+           $t = new Tecnico();
+           $t->setNome("Daniela");
+           $t->setIdade(16);
+           $t->setSexo("F");
+           $t->fazerAniversario();
+           $t->setMatricula(805010);
+           $t->setCurso("Tecnologia da Informação");
+           $t->pagarMensalidade();
+           $t->setRegistroProfissional("Ultimo módulo do Curso");
+           $t->estagio();
+
+           print_r($t);
         ?>
     </pre>
 </body>
