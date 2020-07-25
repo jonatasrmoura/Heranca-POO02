@@ -1,0 +1,31 @@
+Classe Abstrata:
+    Não pode ser instanciada. Só pode servir como
+    progenitora.
+    Não pode gerar objetos.
+
+Método Abstrato:
+    Declarado, mas não implementado na progenitora.
+    O método Abstrato só pode ser colocado em uma
+    interface ou em uma classe abstrato.
+
+Classe Final:
+    Não pode ser herdada por outra classe. Obrigatoriamente
+    folha.
+    Ela não pode der filhos sem subclasses.
+
+Método Final:
+    Não pode ser sobrescrito pelas suas sub-classes.
+    Obrigatoriamente herdado.
+    Não pode ser sobre posto ou seja, não pode gerar uma especialização
+    desse método.
+
+-----------------------------------------------------------------------------------------------
+Capsulamento:
+    Proteger tudo.
+
+Herança:
+    Fazer que uma classe herde coisas de outras.
+
+Polimorfismo:
+    Fazer coisas diferentes, fazer a mesma coisa que tenha o mesmo nome,
+    de maneiras diferente.
