@@ -12,7 +12,7 @@
         <?php
             require_once "class/Visitante.php";
             require_once "class/Aluno.php";
-            //require_once "class/Professor.php";
+            require_once "class/Professor.php";
             require_once "class/Bolsista.php";
             require_once "class/Tecnico.php";
 
@@ -58,6 +58,21 @@
            $t->estagio();
 
            print_r($t);
+           echo "<hr>";
+
+           $pro = new Professor();
+           $pro->setNome("Wagner");
+           $pro->setIdade(50);
+           $pro->setSexo("M");
+           $pro->fazerAniversario();
+           $pro->setEspecialidade("Matemática");
+           $pro->setSalario(3000);
+           $pro->setCargoHorario("8 horas");
+           $pro->setIntervalo("1 hora");
+           $pro->receberAumento(1000);
+           $pro->darAula(15);
+
+           print_r ($pro);
         ?>
     </pre>
 </body>
